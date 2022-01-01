@@ -1,0 +1,204 @@
+<h1>GET 1000000 AND WIN</h1>
+<h5>
+  "TODO: make experience of page better"
+</h5>
+<p>
+<% prizes = [1000000, 750000, 500000, 250000, 100000, 50000, 25000, 10000, 5000, 2500, 1500, 1400, 1300, 1200, 1100, 1000, 850, 750, 600, 500, 400, 300, 150, 100, 75, 50, 20, 10, 5, 1] %>
+
+<%= prizes %>
+</p>
+
+<p>You are being subjected to the randomness of the universe</p>
+
+<br>
+<% random = Random.rand() %>
+<% prizes1 = prizes.pop(Random.rand(1..30)) %>
+<br>
+Your random number
+<br>
+<div id="blink1">
+  <%= random %>
+</div>
+<br>
+<div id="blink2">
+  <%= random %>
+</div>
+<br>
+<div id="blink3">
+  <%= random %>
+</div>
+<br>
+<div id="blink4">
+  <%= random %>
+</div>
+<br>
+<div id="blink5">
+  <%= random %>
+</div>
+<br>
+<div id="blink6">
+  <%= random %>
+</div>
+<br>
+<div id="blink7">
+  <%= random %>
+</div>
+<br>
+<div id="blink8">
+  <%= random %>
+</div>
+<br>
+<div id="blink9">
+  <%= random %>
+</div>
+<br>
+<div id="blink10">
+  <%= random %>
+</div>
+<br>
+<div id="blink11">
+  <%= random %>
+</div>
+<br>
+<div id="blink12">
+  <%= random %>
+</div>
+<br>
+<div id="blink13">
+  <%= random %>
+</div>
+<br>
+<div id="blink14">
+  <%= random %>
+</div>
+<br>
+<div id="blink15">
+  <%= random %>
+</div>
+<br>
+<div id="blink16">
+  <%= random %>
+</div>
+<br>
+<div id="blink17">
+  <%= random %>
+</div>
+<br>
+<div id="blink18">
+  <%= random %>
+</div>
+<br>
+<div id="blink19">
+  <%= random %>
+</div>
+<br>
+<div id="blink20">
+  <%= random %>
+</div>
+<br>
+<div id="blink21">
+  <%= random %>
+</div>
+<br>
+<div id="blink22">
+  <%= random %>
+</div>
+<br>
+<div id="blink23">
+  <%= random %>
+</div>
+<br>
+<div id="blink24">
+  <%= random %>
+</div>
+<br>
+<div id="blink25">
+  <%= random %>
+</div>
+<br>
+<div id="blink26">
+  <%= random %>
+</div>
+<br>
+<div id="blink27">
+  <%= random %>
+</div>
+<br>
+<div id="blink28">
+  <%= random %>
+</div>
+<br>
+<div id="blink29">
+  <%= random %>
+</div>
+<br>
+<div id="blink30">
+  <%= random %>
+</div>
+<br>
+
+<br>
+You've lost these numbers
+<br>
+<%= prizes1 %>
+
+<br>
+You're left with
+<br>
+<%= prizes %>
+
+
+<script type="text/javascript">
+  function fadeOut(id,val){ if(isNaN(val)){ val = 9;}
+    document.getElementById(id).style.opacity='0.'+val;
+    //For IE
+    document.getElementById(id).style.filter='alpha(opacity='+val+'0)';
+    if(val>0){
+      val--;
+      setTimeout('fadeOut("'+id+'",'+val+')',90);
+    }else{return;}
+  }
+
+function fadeIn(id,val){
+// ID of the element to fade, Fade value[min value is 0]
+  if(isNaN(val)){ val = 0;}
+    document.getElementById(id).style.opacity='0.'+val;
+    //For IE
+    document.getElementById(id).style.filter='alpha(opacity='+val+'0)';
+  if(val<9){
+    val++;
+    setTimeout('fadeIn("'+id+'",'+val+')',90);
+    }else{return;}
+  }
+
+  fadeIn("blink1",4)
+  fadeIn("blink2",8)
+  fadeIn("blink3",16)
+  fadeIn("blink4",32)
+  fadeIn("blink5",68)
+  fadeIn("blink6",100)
+  fadeIn("blink7",200)
+  fadeIn("blink8",300)
+  fadeIn("blink9",400)
+  fadeIn("blink10",600)
+  fadeIn("blink11",1200)
+  fadeIn("blink12",1400)
+  fadeIn("blink13",2000)
+  fadeIn("blink14",3000)
+  fadeIn("blink15",4000)
+  fadeIn("blink16",5000)
+  fadeIn("blink17",60000)
+  fadeIn("blink18",70000)
+  fadeIn("blink19",800000)
+  fadeIn("blink20",900000)
+  fadeIn("blink21",120000)
+  fadeIn("blink22",1400000)
+  fadeIn("blink23",2000000)
+  fadeIn("blink24",30000000)
+  fadeIn("blink25",400000000)
+  fadeIn("blink26",50000000000)
+  fadeIn("blink27",6000000000000)
+  fadeIn("blink28",800000000000000)
+  fadeIn("blink29",800000000000000000)
+  fadeIn("blink30",80000000000000000000)
+</script>
